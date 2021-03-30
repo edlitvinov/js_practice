@@ -1,36 +1,22 @@
 "use strict";
 
-// if (4 == 7) {
-//     console.log("OK!");
-// } else {
-//     console.log("error!");
+// let num = 70;
+
+// while (num <= 75) {
+//     console.log(num);
+//     num++;
 // }
 
-// const num = 70;
-
-// if (num < 37) {
-//     console.log("error!");
-// } else if (num > 90) {
-//     console.log("много");
-// } else {
-//     console.log("OK!");
+// do {
+//     console.log(num);
+//     num++;
 // }
+// while (num <= 75);
 
-// (num === 80) ? console.log("error!"): console.log("OK!");
-
-const num = 50;
-
-switch (num) {
-    case 37:
-        console.log("неверно!");
-        break;
-    case 100:
-        console.log("неверно!");
-        break;
-    case 20:
-        console.log("верно!");
-        break;
-    default:
-        console.log("не в этот раз!");
-        break;
+for (let i = 1; i < 10; i++) {
+    if (i === 6) {
+        //break; //останавливает цикл
+        continue; // прерывает цикл в точке условия и продолжает его далее
+    }
+    console.log(i);
 }
