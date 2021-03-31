@@ -1,36 +1,20 @@
 "use strict";
+const str = "test text";
+const arr = [1, 7, 5];
+console.log(str.length);
+console.log(arr.length);
+console.log(str[2]);
+console.log(str.toUpperCase());
+console.log(str);
 
-let num = 20;
-//showFirstMessage() - Имя функции должно состоять из глагола.....
-function showFirstMessage(text) {
-    console.log(text);
-    let num = 10;
-    console.log(num);
-}
+const fruit = "Some fruit";
+console.log(fruit.indexOf(" "));
+const logg = "hell world!";
+console.log(logg.slice(3, 6));
 
-showFirstMessage("hello!");
-console.log(num);
+const num = 12.2;
+console.log(Math.round(num));
 
-let a = +prompt("num_1: ", "");
-let b = +prompt("num_2: ", "");
-console.log(calc(3, 4));
-console.log(calc(15, 16));
-
-function calc(a, b) {
-    return (a + b);
-}
-
-
-function ret() {
-    let num = 20;
-    return num;
-}
-
-const anotherNum = ret();
-console.log(anotherNum);
-const logger = function() {
-    console.log("hello!");
-};
-logger();
-
-const calc = (a, b) => a + b;
+const test = "12.2px";
+console.log(parseInt(test));
+console.log(parseFloat(test));
