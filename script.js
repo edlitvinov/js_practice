@@ -1,43 +1,36 @@
- "use strict";
- const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', ' ');
- const personalMovieDB = {
-     count: numberOfFilms,
-     movies: {},
-     actors: {},
-     genres: [],
-     privat: false
- };
+"use strict";
 
- //  const a = prompt('Один из последних просмотренных фильмов?', ''),
- //      b = +prompt('На сколько оцените его?', ''),
- //      c = prompt('Один из последних просмотренных фильмов?', ''),
- //      d = +prompt('На сколько оцените его?', '');
+let num = 20;
+//showFirstMessage() - Имя функции должно состоять из глагола.....
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 10;
+    console.log(num);
+}
 
- //  personalMovieDB.movies[a] = b;
- //  personalMovieDB.movies[c] = d;
+showFirstMessage("hello!");
+console.log(num);
 
- for (let i = 0; i < 2; i++) {
-     const a = prompt('Один из последних просмотренных фильмов?', ''),
-         b = +prompt('На сколько оцените его?', '');
-     if (a != null && b != null && a != '' && b != null && a.length < 50) {
-         personalMovieDB.movies[a] = b;
-         console.log('done');
-     } else {
-         console.log('error');
-         i--;
-     }
+let a = +prompt("num_1: ", "");
+let b = +prompt("num_2: ", "");
+console.log(calc(3, 4));
+console.log(calc(15, 16));
 
- }
+function calc(a, b) {
+    return (a + b);
+}
 
- if (personalMovieDB.count < 10) {
-     console.log("Просмотрено довольно мало фильмов");
 
- } else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
-     console.log("Вы классический зритель");
- } else if (personalMovieDB.count > 30) {
-     console.log("Вы киноман");
- } else {
-     console.log("Произошла ошибка");
- }
+function ret() {
+    let num = 20;
+    return num;
+}
 
- console.log(personalMovieDB);
+const anotherNum = ret();
+console.log(anotherNum);
+const logger = function() {
+    console.log("hello!");
+};
+logger();
+
+const calc = (a, b) => a + b;
