@@ -1,20 +1,28 @@
 "use strict";
-const str = "test text";
-const arr = [1, 7, 5];
-console.log(str.length);
-console.log(arr.length);
-console.log(str[2]);
-console.log(str.toUpperCase());
-console.log(str);
 
-const fruit = "Some fruit";
-console.log(fruit.indexOf(" "));
-const logg = "hell world!";
-console.log(logg.slice(3, 6));
+function first() {
+    setTimeout(function() {
+        console.log(1);
+    }, 500);
+}
 
-const num = 12.2;
-console.log(Math.round(num));
+function second() {
+    console.log(2);
+}
 
-const test = "12.2px";
-console.log(parseInt(test));
-console.log(parseFloat(test));
+first();
+second();
+
+function learnJS(lang, callback) {
+    console.log(`я учу: ${lang}`);
+    callback();
+}
+
+// learnJS('JavaScript', function() {
+//     console.log('я прошёл этот уровень!');
+// });
+function done() {
+    console.log('я прошёл этот уровень!');
+}
+
+learnJS('JavaScript', done);
